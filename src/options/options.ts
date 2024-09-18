@@ -6,6 +6,8 @@ const defaultOptions: ValidatorOptionsFinal = {
   validateTypo: true,
   validateDisposable: true,
   validateSMTP: true,
+  smtpTimeout: 10 * 1000,
+  smtpPort: 25,
 }
 
 type Options = {
@@ -15,6 +17,8 @@ type Options = {
   validateTypo: boolean
   validateDisposable: boolean
   validateSMTP: boolean
+  smtpTimeout: number,
+  smtpPort: number,
 }
 
 type MailCheckOptions = {
